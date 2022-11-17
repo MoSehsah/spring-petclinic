@@ -81,4 +81,4 @@ jobs:
           namespace: spring-petclinic
           manifests: app.yaml
           # Fully qualified resource URL of the image(s) to be used for substitutions on the manifest files Example: contosodemo.azurecr.io/helloworld:test
-          images: $APP_IMAGE
+          images: ghcr.io/${{ github.repository_owner }}/spring-petclinic:${{ github.run_number }}
