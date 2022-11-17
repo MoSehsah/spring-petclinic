@@ -161,17 +161,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
-            <docker>
-                <publishRegistry>
-                    <username>${env.DOCKER_PUBLISH_USERNAME}</username>
-                    <password>${env.DOCKER_PUBLISH_PASSWORD}</password>
-                </publishRegistry>
-            </docker>
-        </configuration>
-    </plugin>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
+          <docker>
+              <publishRegistry>
+                  <username>${env.DOCKER_PUBLISH_USERNAME}</username>
+                  <password>${env.DOCKER_PUBLISH_PASSWORD}</password>
+              </publishRegistry>
+          </docker>
+      </configuration>
         <executions>
           <execution>
             <!-- Spring Boot Actuator displays build-related information
